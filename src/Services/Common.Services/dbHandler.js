@@ -1,7 +1,7 @@
 const sqlite3 = require('sqlite3').verbose();
 
 const DataTypes = { TEXT: 'TEXT', INTEGER: 'INTEGER', NULL: 'NULL' };
-
+//fdgrdff
 class SqliteDatabase {
   constructor(dbFile) { this.dbFile = dbFile; this.openConnections = 0; this.db = null; }
   open() { if (this.openConnections <= 0) { this.db = new sqlite3.Database(this.dbFile); this.openConnections = 1; } else this.openConnections++; }
