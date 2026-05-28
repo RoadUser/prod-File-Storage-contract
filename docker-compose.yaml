@@ -1,0 +1,32 @@
+version: "3.8"
+services:
+  hp-node-1:
+    image: evernode/sashimono:hp.0.6.4-ubt.20.04-njs.20
+    environment:
+      - HP_CONTRACT_BIN=/usr/bin/node
+      - HP_CONTRACT_ARGS=index.js
+    volumes:
+      - ./dist:/contract/contract_fs
+    ports:
+      - "8081:8081"
+    command: ["/bin/bash", "-lc", "hpserver"]
+  hp-node-2:
+    image: evernode/sashimono:hp.0.6.4-ubt.20.04-njs.20
+    environment:
+      - HP_CONTRACT_BIN=/usr/bin/node
+      - HP_CONTRACT_ARGS=index.js
+    volumes:
+      - ./dist:/contract/contract_fs
+    ports:
+      - "8082:8081"
+    command: ["/bin/bash", "-lc", "hpserver"]
+  hp-node-3:
+    image: evernode/sashimono:hp.0.6.4-ubt.20.04-njs.20
+    environment:
+      - HP_CONTRACT_BIN=/usr/bin/node
+      - HP_CONTRACT_ARGS=index.js
+    volumes:
+      - ./dist:/contract/contract_fs
+    ports:
+      - "8083:8081"
+    command: ["/bin/bash", "-lc", "hpserver"]

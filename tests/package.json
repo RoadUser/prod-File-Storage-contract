@@ -1,0 +1,11 @@
+{
+  "name": "filestore-contract-tests",
+  "version": "1.0.0",
+  "main": "run-tests.js",
+  "scripts": { "test": "node run-tests.js" },
+  "dependencies": {
+    "hotpocket-js-client": "0.5.7",
+    "bson": "6.0.0",
+    "libsodium-wrappers": "0.7.9"
+  }
+}

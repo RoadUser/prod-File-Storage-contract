@@ -1,0 +1,15 @@
+{
+  "settings": {
+    "postExecutionScriptName": "./post_exec.sh",
+    "dbPath": "filestore.db",
+    "dbScriptsFolderPath": "./dbScripts",
+    "newContractZipFileName": "./newContractData.zip",
+    "maxTags": 20,
+    "maxDescriptionLen": 2000,
+    "maxFilenameLen": 255,
+    "allowedSchemes": ["ipfs", "ar", "https"],
+    "allowedMimes": ["application/pdf", "image/png", "image/jpeg", "text/plain", "application/json"],
+    "defaultUserQuotaBytes": 1073741824,
+    "uniqueFilenamePerOwner": true
+  }
+}
